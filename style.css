@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -428,3 +429,435 @@ button {
         font-size: 22px;
     }
 }
+=======
+
+
+
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO BACKGROUND */
+
+.hero {
+    min-height: 600px;
+    background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* NAVBAR */
+.navbar {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CURVED NETFLIX LOGO */
+
+
+.logo {
+    color: #e50914;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    display: inline-block;
+    transform: scaleX(0.95);
+}
+
+
+
+.logo span {
+    display: inline-block;
+}
+
+.logo span:nth-child(1) {
+    transform: translateY(5px) rotate(-7deg);
+}
+
+.logo span:nth-child(2) {
+    transform: translateY(2px) rotate(-5deg);
+}
+
+.logo span:nth-child(3) {
+    transform: translateY(0) rotate(-2deg);
+}
+
+.logo span:nth-child(4) {
+    transform: translateY(-1px);
+}
+
+.logo span:nth-child(5) {
+    transform: translateY(0) rotate(2deg);
+}
+
+.logo span:nth-child(6) {
+    transform: translateY(2px) rotate(5deg);
+}
+
+.logo span:nth-child(7) {
+    transform: translateY(5px) rotate(7deg);
+}
+
+/* NAVIGATION BUTTONS */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-right select,
+.footer-language {
+    background: rgba(20, 20, 20, 0.8);
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+select option {
+    background: #222;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background: #e50914;
+    padding: 10px 18px;
+}
+
+.sign-in:hover,
+.email-form button:hover {
+    background: #c11119;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    max-width: 850px;
+    margin: 190px auto 0;
+    padding: 0 20px 80px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero-content h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-content p,
+.bottom-email p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* EMAIL FORMS */
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.email-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 18px 14px;
+    background: rgba(20, 20, 20, 0.7);
+    color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.email-form input::placeholder {
+    color: #ddd;
+}
+
+.email-form button {
+    background: #e50914;
+    padding: 14px 22px;
+    font-size: 21px;
+    white-space: nowrap;
+}
+
+.email-form button span {
+    font-size: 27px;
+    margin-left: 8px;
+}
+
+/* GENERAL SECTIONS */
+.section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.section > h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* TRENDING POSTERS */
+.poster-list {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    padding: 10px 8px 20px;
+}
+
+.poster {
+    flex: 0 0 180px;
+    height: 250px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.poster:hover {
+    transform: scale(1.06);
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.number {
+    position: absolute;
+    left: -17px;
+    bottom: 0;
+    z-index: 2;
+    font-size: 90px;
+    line-height: 1;
+    font-weight: 900;
+    color: #000;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* REASONS TO JOIN */
+.reason-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.reason-card {
+    min-height: 275px;
+    padding: 25px 20px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #192247, #210e20);
+}
+
+.reason-card h3 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.reason-card p {
+    color: #d0d0d8;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.reason-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    font-size: 45px;
+    color: #ff6b9d;
+}
+
+/* BOTTOM EMAIL */
+.bottom-email {
+    width: 80%;
+    max-width: 800px;
+    margin: 65px auto;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto 30px;
+    color: #b3b3b3;
+}
+
+.footer a {
+    color: #b3b3b3;
+}
+
+.questions {
+    margin-bottom: 40px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 14px;
+}
+
+.footer-language {
+    margin-top: 40px;
+}
+
+.country {
+    margin-top: 35px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+/* TABLET RESPONSIVE */
+@media (max-width: 900px) {
+    .reason-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section,
+    .footer,
+    .bottom-email {
+        width: 90%;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .hero {
+        min-height: 650px;
+    }
+
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-right {
+        gap: 6px;
+    }
+
+    .nav-right select {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    .sign-in {
+        padding: 8px 10px;
+    }
+
+    .hero-content {
+        margin-top: 150px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content h3 {
+        font-size: 17px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .email-form {
+        flex-direction: column;
+    }
+
+    .email-form input {
+        width: 100%;
+        min-height: 55px;
+    }
+
+    .email-form button {
+        align-self: center;
+        font-size: 17px;
+        padding: 12px 18px;
+    }
+
+    .poster {
+        flex-basis: 145px;
+        height: 205px;
+    }
+
+    .number {
+        font-size: 70px;
+        left: -12px;
+    }
+
+    .reason-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reason-card {
+        min-height: 220px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section > h2 {
+        font-size: 22px;
+    }
+}
+>>>>>>> 28235d17cbf2e9840ed12ca9d080a758cdf12bd3
